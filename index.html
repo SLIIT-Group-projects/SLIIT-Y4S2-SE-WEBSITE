@@ -42,6 +42,7 @@
       <div class="hero-bg" aria-hidden="true">
         <span class="hero-bg-orb hero-bg-orb--1"></span>
         <span class="hero-bg-orb hero-bg-orb--2"></span>
+        <span class="hero-bg-orb hero-bg-orb--3"></span>
         <span class="hero-bg-grid"></span>
       </div>
       <div class="container hero-layout">
@@ -68,147 +69,140 @@
           </div>
         </div>
 
-        <!-- Hero visual: pure CSS 3D child + learning device (EDIT colors/sizes in style.css variables if needed) -->
+        <!-- Hero photo + CSS 3D stage (not a reconstructed mesh — swap assets/hero.jpg anytime) -->
         <div class="hero-scene" id="hero-scene">
           <div class="hero-decor" aria-hidden="true">
             <div class="hero-ring hero-ring--outer"></div>
             <div class="hero-ring hero-ring--inner"></div>
             <div class="hero-glow-blob"></div>
+            <div class="hero-sparkles">
+              <span class="hero-sparkle hero-sparkle--1"></span>
+              <span class="hero-sparkle hero-sparkle--2"></span>
+              <span class="hero-sparkle hero-sparkle--3"></span>
+              <span class="hero-sparkle hero-sparkle--4"></span>
+              <span class="hero-sparkle hero-sparkle--5"></span>
+              <span class="hero-sparkle hero-sparkle--6"></span>
+            </div>
           </div>
 
           <figure class="hero-figure">
-            <div class="hero-figure-frame--3d" id="hero-figure-frame">
-              <div class="child-3d-stage" role="img" aria-label="Stylized 3D figure of a child with a learning interface">
-                <div class="child-3d-shadow" aria-hidden="true"></div>
-                <div class="child-3d-gyro">
-                  <div class="child-3d-bob">
-                    <div class="child-3d-figure">
-                      <!-- 3D assistive / learning screen -->
-                      <div class="c3d-device" aria-hidden="true">
-                        <div class="c3d-device-face c3d-device-f"></div>
-                        <div class="c3d-device-face c3d-device-b"></div>
-                        <div class="c3d-device-face c3d-device-l"></div>
-                        <div class="c3d-device-face c3d-device-r"></div>
-                        <div class="c3d-device-face c3d-device-t"></div>
-                        <div class="c3d-device-face c3d-device-bt"></div>
-                        <div class="c3d-device-glow" aria-hidden="true"></div>
-                      </div>
-
-                      <!-- 3D child: head cube -->
-                      <div class="c3d-head" aria-hidden="true">
-                        <div class="c3d-hf"></div>
-                        <div class="c3d-hb"></div>
-                        <div class="c3d-hr"></div>
-                        <div class="c3d-hl"></div>
-                        <div class="c3d-ht"></div>
-                        <div class="c3d-hbt"></div>
-                      </div>
-
-                      <!-- Torso cuboid -->
-                      <div class="c3d-torso" aria-hidden="true">
-                        <div class="c3d-tf"></div>
-                        <div class="c3d-tb"></div>
-                        <div class="c3d-tr"></div>
-                        <div class="c3d-tl"></div>
-                        <div class="c3d-tt"></div>
-                        <div class="c3d-tbt"></div>
-                        <div class="c3d-arm c3d-arm--l" aria-hidden="true"></div>
-                        <div class="c3d-arm c3d-arm--r" aria-hidden="true"></div>
-                      </div>
-
-                      <!-- Legs -->
-                      <div class="c3d-legs" aria-hidden="true">
-                        <div class="c3d-leg c3d-leg--l"></div>
-                        <div class="c3d-leg c3d-leg--r"></div>
-                      </div>
-                    </div>
-                  </div>
+            <div class="hero-visual-stage">
+              <div class="hero-visual-card">
+                <div class="hero-visual-inner">
+                  <img
+                    class="hero-visual-img"
+                    src="assets/hero.jpg"
+                    width="3584"
+                    height="5376"
+                    alt="IALS project hero photograph — assistive learning and inclusive technology."
+                    decoding="async"
+                    fetchpriority="high"
+                  >
                 </div>
               </div>
             </div>
-            <figcaption class="hero-figure-caption">3D concept — learner with assistive interface</figcaption>
+            <figcaption class="hero-figure-caption">Project hero image — 3D-style presentation</figcaption>
           </figure>
         </div>
       </div>
     </section>
 
     <!-- ========== DOMAIN ========== -->
-    <section class="section section-alt" id="domain">
+    <section class="section section-alt domain-section" id="domain">
       <div class="container">
         <header class="section-header">
+          <p class="domain-eyebrow">Research foundation</p>
           <h2>Domain</h2>
           <p class="section-lead">Literature, gap, problem, objectives, methodology, and technologies underpinning the system.</p>
         </header>
 
-        <div class="grid-2">
-          <article class="card">
-            <h3>Literature Survey</h3>
+        <div class="domain-narrative">
+          <article class="domain-card">
+            <h3 class="domain-card-title">Literature survey</h3>
             <!-- EDIT: Summarize key papers / themes -->
             <p>Prior work spans isolated sign recognition apps, limited gamification for deaf learners, emotion sensing without classroom context, and alarm detection without child-specific prioritization. Integrated, child-centered designs remain comparatively rare.</p>
           </article>
-          <article class="card">
-            <h3>Research Gap</h3>
+          <article class="domain-card">
+            <h3 class="domain-card-title">Research gap</h3>
             <!-- EDIT: Refine gap statement -->
             <p>There is a gap in unified systems that combine multilingual sign support, validated practice, multimodal affect cues, and context-aware hazard awareness with dashboards for children, parents, and educators.</p>
           </article>
-          <article class="card">
-            <h3>Research Problem</h3>
+          <article class="domain-card">
+            <h3 class="domain-card-title">Research problem</h3>
             <!-- EDIT: Problem statement -->
             <p>How can an integrated assistive learning system improve communication, emotional engagement, learning progress, and environmental safety for hearing-impaired children using multimodal inputs and responsible AI feedback?</p>
           </article>
-          <article class="card card-highlight">
-            <h3>Research Objectives</h3>
+        </div>
+
+        <article class="domain-objectives-panel" aria-labelledby="domain-obj-heading">
+          <div class="domain-obj-col domain-obj-col--main">
+            <h3 id="domain-obj-heading" class="domain-card-title">Research objectives</h3>
             <p><strong>Main objective:</strong> To design and develop an integrated AI-powered assistive learning system that improves communication, emotional engagement, learning progress, and environmental safety for hearing-impaired children.</p>
-            <p class="mt-sm"><strong>Sub objectives:</strong></p>
-            <ul class="list-check">
+          </div>
+          <div class="domain-obj-col domain-obj-col--subs">
+            <p class="domain-obj-subs-label"><strong>Sub objectives</strong></p>
+            <ul class="domain-obj-subs-list">
               <li>Develop sign language recognition and translation.</li>
               <li>Create gamified sign language learning with real-time gesture validation.</li>
               <li>Implement multimodal emotion and hand movement analysis.</li>
               <li>Build context-aware hazard sound detection and prioritization.</li>
               <li>Provide feedback dashboards for children, parents, and educators.</li>
             </ul>
-          </article>
+          </div>
+        </article>
+
+        <div class="domain-block">
+          <h3 class="domain-block-heading">System components</h3>
+          <ol class="domain-comp-list">
+            <li>
+              <span class="domain-comp-num" aria-hidden="true">1</span>
+              <div class="domain-comp-body">
+                <h4>Multilingual sign language recognition and translation</h4>
+                <!-- EDIT: Component description -->
+                <p>Recognition pipelines and translation layers to bridge expressive signing and readable output for peers and caregivers.</p>
+              </div>
+            </li>
+            <li>
+              <span class="domain-comp-num" aria-hidden="true">2</span>
+              <div class="domain-comp-body">
+                <h4>Gamified sign language learning and gesture validation</h4>
+                <p>Interactive lessons with live feedback on hand shape, motion, and timing to reinforce correct gestures.</p>
+              </div>
+            </li>
+            <li>
+              <span class="domain-comp-num" aria-hidden="true">3</span>
+              <div class="domain-comp-body">
+                <h4>Multimodal emotion and interaction analysis</h4>
+                <p>Fusion of visual and behavioral cues to support engagement tracking and supportive interventions.</p>
+              </div>
+            </li>
+            <li>
+              <span class="domain-comp-num" aria-hidden="true">4</span>
+              <div class="domain-comp-body">
+                <h4>Context-aware environmental hazard sound detection and prioritization</h4>
+                <p>Sound-event understanding with context to surface alerts that matter in classroom and home settings.</p>
+              </div>
+            </li>
+          </ol>
         </div>
 
-        <h3 class="subsection-title">System Components</h3>
-        <div class="grid-components">
-          <article class="card card-comp">
-            <span class="comp-num">1</span>
-            <h4>Multilingual Sign Language Recognition and Translation</h4>
-            <!-- EDIT: Component description -->
-            <p>Recognition pipelines and translation layers to bridge expressive signing and readable output for peers and caregivers.</p>
-          </article>
-          <article class="card card-comp">
-            <span class="comp-num">2</span>
-            <h4>Gamified Sign Language Learning and Gesture Validation</h4>
-            <p>Interactive lessons with live feedback on hand shape, motion, and timing to reinforce correct gestures.</p>
-          </article>
-          <article class="card card-comp">
-            <span class="comp-num">3</span>
-            <h4>Multimodal Emotion and Interaction Analysis</h4>
-            <p>Fusion of visual and behavioral cues to support engagement tracking and supportive interventions.</p>
-          </article>
-          <article class="card card-comp">
-            <span class="comp-num">4</span>
-            <h4>Context-Aware Environmental Hazard Sound Detection and Prioritization</h4>
-            <p>Sound-event understanding with context to surface alerts that matter in classroom and home settings.</p>
-          </article>
+        <div class="domain-block">
+          <h3 class="domain-block-heading">Methodology — high-level architecture</h3>
+          <p class="arch-caption">Child user flows through sensing, AI modules, and tailored dashboards.</p>
+          <div class="domain-arch" role="img" aria-label="Architecture: Child to inputs to AI to outputs">
+            <div class="domain-arch-step">Child user</div>
+            <span class="domain-arch-join" aria-hidden="true">→</span>
+            <div class="domain-arch-step">Camera / microphone input</div>
+            <span class="domain-arch-join" aria-hidden="true">→</span>
+            <div class="domain-arch-step domain-arch-step--wide">AI processing modules</div>
+            <span class="domain-arch-join" aria-hidden="true">→</span>
+            <div class="domain-arch-step">Feedback / dashboard output</div>
+          </div>
         </div>
 
-        <h3 class="subsection-title">Methodology — High-Level Architecture</h3>
-        <p class="arch-caption">Child user flows through sensing, AI modules, and tailored dashboards.</p>
-        <div class="arch-flow" role="img" aria-label="Architecture: Child to inputs to AI to outputs">
-          <div class="arch-card">Child User</div>
-          <span class="arch-arrow" aria-hidden="true">→</span>
-          <div class="arch-card">Camera / Microphone Input</div>
-          <span class="arch-arrow" aria-hidden="true">→</span>
-          <div class="arch-card arch-wide">AI Processing Modules</div>
-          <span class="arch-arrow" aria-hidden="true">→</span>
-          <div class="arch-card">Feedback / Dashboard Output</div>
-        </div>
-
-        <h3 class="subsection-title">Technologies Used</h3>
-        <div class="tech-tags" aria-label="Technologies">
+        <div class="domain-block">
+          <h3 class="domain-block-heading">Technologies used</h3>
+          <div class="tech-tags" aria-label="Technologies">
           <!-- EDIT: Add or remove tech tags -->
           <span class="tag">HTML</span>
           <span class="tag">CSS</span>
@@ -222,6 +216,7 @@
           <span class="tag">YAMNet</span>
           <span class="tag">Excel / JSON datasets</span>
           <span class="tag">REST APIs</span>
+          </div>
         </div>
       </div>
     </section>
