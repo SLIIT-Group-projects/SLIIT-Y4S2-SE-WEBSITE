@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Integrated Assistive Learning System for Hearing-Impaired Children — research project website.">
+  <title>IALS — Assistive Learning for Hearing-Impaired Children</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- EDIT: Add favicon link here if needed -->
+  <!-- Self-contained: no external font CDN (better for small uploads). Fonts set in style.css -->
+</head>
+<body>
+  <a href="#home" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary">
+      <div class="nav-inner">
+        <a class="nav-brand" href="#home">IALS</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" id="nav-toggle">
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#domain">Domain</a></li>
+          <li><a class="nav-link" href="#milestones">Milestones</a></li>
+          <li><a class="nav-link" href="#documents">Documents</a></li>
+          <li><a class="nav-link" href="#presentations">Presentations</a></li>
+          <li><a class="nav-link" href="#about">About Us</a></li>
+          <li><a class="nav-link" href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========== HOME ========== -->
+    <section class="section hero" id="home">
+      <!-- EDIT: Decorative layer only (no essential content) -->
+      <div class="hero-bg" aria-hidden="true">
+        <span class="hero-bg-orb hero-bg-orb--1"></span>
+        <span class="hero-bg-orb hero-bg-orb--2"></span>
+        <span class="hero-bg-grid"></span>
+      </div>
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="hero-kicker"><span class="hero-kicker-line"></span> Research Project</p>
+          <h1 class="hero-title">
+            <span class="hero-title-line">Integrated Assistive Learning System</span>
+            <span class="hero-title-accent">for Hearing-Impaired Children</span>
+          </h1>
+          <p class="hero-abstract">
+            <!-- EDIT: Short abstract text -->
+            An integrated, AI-assisted research platform that supports hearing-impaired children through
+            <strong>communication</strong>, <strong>learning</strong>, <strong>emotion awareness</strong>, and
+            <strong>environmental safety</strong>—unifying sign-language intelligence, engagement insight, and context-aware alerts in one coherent experience.
+          </p>
+          <ul class="hero-pills" aria-label="Focus areas">
+            <li>Multimodal sensing</li>
+            <li>Responsible AI feedback</li>
+            <li>Child-centered design</li>
+          </ul>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#domain">View Domain</a>
+            <a class="btn btn-outline" href="#contact">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- Hero visual: pure CSS 3D child + learning device (EDIT colors/sizes in style.css variables if needed) -->
+        <div class="hero-scene" id="hero-scene">
+          <div class="hero-decor" aria-hidden="true">
+            <div class="hero-ring hero-ring--outer"></div>
+            <div class="hero-ring hero-ring--inner"></div>
+            <div class="hero-glow-blob"></div>
+          </div>
+
+          <figure class="hero-figure">
+            <div class="hero-figure-frame--3d" id="hero-figure-frame">
+              <div class="child-3d-stage" role="img" aria-label="Stylized 3D figure of a child with a learning interface">
+                <div class="child-3d-shadow" aria-hidden="true"></div>
+                <div class="child-3d-gyro">
+                  <div class="child-3d-bob">
+                    <div class="child-3d-figure">
+                      <!-- 3D assistive / learning screen -->
+                      <div class="c3d-device" aria-hidden="true">
+                        <div class="c3d-device-face c3d-device-f"></div>
+                        <div class="c3d-device-face c3d-device-b"></div>
+                        <div class="c3d-device-face c3d-device-l"></div>
+                        <div class="c3d-device-face c3d-device-r"></div>
+                        <div class="c3d-device-face c3d-device-t"></div>
+                        <div class="c3d-device-face c3d-device-bt"></div>
+                        <div class="c3d-device-glow" aria-hidden="true"></div>
+                      </div>
+
+                      <!-- 3D child: head cube -->
+                      <div class="c3d-head" aria-hidden="true">
+                        <div class="c3d-hf"></div>
+                        <div class="c3d-hb"></div>
+                        <div class="c3d-hr"></div>
+                        <div class="c3d-hl"></div>
+                        <div class="c3d-ht"></div>
+                        <div class="c3d-hbt"></div>
+                      </div>
+
+                      <!-- Torso cuboid -->
+                      <div class="c3d-torso" aria-hidden="true">
+                        <div class="c3d-tf"></div>
+                        <div class="c3d-tb"></div>
+                        <div class="c3d-tr"></div>
+                        <div class="c3d-tl"></div>
+                        <div class="c3d-tt"></div>
+                        <div class="c3d-tbt"></div>
+                        <div class="c3d-arm c3d-arm--l" aria-hidden="true"></div>
+                        <div class="c3d-arm c3d-arm--r" aria-hidden="true"></div>
+                      </div>
+
+                      <!-- Legs -->
+                      <div class="c3d-legs" aria-hidden="true">
+                        <div class="c3d-leg c3d-leg--l"></div>
+                        <div class="c3d-leg c3d-leg--r"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <figcaption class="hero-figure-caption">3D concept — learner with assistive interface</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DOMAIN ========== -->
+    <section class="section section-alt" id="domain">
+      <div class="container">
+        <header class="section-header">
+          <h2>Domain</h2>
+          <p class="section-lead">Literature, gap, problem, objectives, methodology, and technologies underpinning the system.</p>
+        </header>
+
+        <div class="grid-2">
+          <article class="card">
+            <h3>Literature Survey</h3>
+            <!-- EDIT: Summarize key papers / themes -->
+            <p>Prior work spans isolated sign recognition apps, limited gamification for deaf learners, emotion sensing without classroom context, and alarm detection without child-specific prioritization. Integrated, child-centered designs remain comparatively rare.</p>
+          </article>
+          <article class="card">
+            <h3>Research Gap</h3>
+            <!-- EDIT: Refine gap statement -->
+            <p>There is a gap in unified systems that combine multilingual sign support, validated practice, multimodal affect cues, and context-aware hazard awareness with dashboards for children, parents, and educators.</p>
+          </article>
+          <article class="card">
+            <h3>Research Problem</h3>
+            <!-- EDIT: Problem statement -->
+            <p>How can an integrated assistive learning system improve communication, emotional engagement, learning progress, and environmental safety for hearing-impaired children using multimodal inputs and responsible AI feedback?</p>
+          </article>
+          <article class="card card-highlight">
+            <h3>Research Objectives</h3>
+            <p><strong>Main objective:</strong> To design and develop an integrated AI-powered assistive learning system that improves communication, emotional engagement, learning progress, and environmental safety for hearing-impaired children.</p>
+            <p class="mt-sm"><strong>Sub objectives:</strong></p>
+            <ul class="list-check">
+              <li>Develop sign language recognition and translation.</li>
+              <li>Create gamified sign language learning with real-time gesture validation.</li>
+              <li>Implement multimodal emotion and hand movement analysis.</li>
+              <li>Build context-aware hazard sound detection and prioritization.</li>
+              <li>Provide feedback dashboards for children, parents, and educators.</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3 class="subsection-title">System Components</h3>
+        <div class="grid-components">
+          <article class="card card-comp">
+            <span class="comp-num">1</span>
+            <h4>Multilingual Sign Language Recognition and Translation</h4>
+            <!-- EDIT: Component description -->
+            <p>Recognition pipelines and translation layers to bridge expressive signing and readable output for peers and caregivers.</p>
+          </article>
+          <article class="card card-comp">
+            <span class="comp-num">2</span>
+            <h4>Gamified Sign Language Learning and Gesture Validation</h4>
+            <p>Interactive lessons with live feedback on hand shape, motion, and timing to reinforce correct gestures.</p>
+          </article>
+          <article class="card card-comp">
+            <span class="comp-num">3</span>
+            <h4>Multimodal Emotion and Interaction Analysis</h4>
+            <p>Fusion of visual and behavioral cues to support engagement tracking and supportive interventions.</p>
+          </article>
+          <article class="card card-comp">
+            <span class="comp-num">4</span>
+            <h4>Context-Aware Environmental Hazard Sound Detection and Prioritization</h4>
+            <p>Sound-event understanding with context to surface alerts that matter in classroom and home settings.</p>
+          </article>
+        </div>
+
+        <h3 class="subsection-title">Methodology — High-Level Architecture</h3>
+        <p class="arch-caption">Child user flows through sensing, AI modules, and tailored dashboards.</p>
+        <div class="arch-flow" role="img" aria-label="Architecture: Child to inputs to AI to outputs">
+          <div class="arch-card">Child User</div>
+          <span class="arch-arrow" aria-hidden="true">→</span>
+          <div class="arch-card">Camera / Microphone Input</div>
+          <span class="arch-arrow" aria-hidden="true">→</span>
+          <div class="arch-card arch-wide">AI Processing Modules</div>
+          <span class="arch-arrow" aria-hidden="true">→</span>
+          <div class="arch-card">Feedback / Dashboard Output</div>
+        </div>
+
+        <h3 class="subsection-title">Technologies Used</h3>
+        <div class="tech-tags" aria-label="Technologies">
+          <!-- EDIT: Add or remove tech tags -->
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Python</span>
+          <span class="tag">Flask / FastAPI</span>
+          <span class="tag">CNN</span>
+          <span class="tag">EfficientNet-B0</span>
+          <span class="tag">MediaPipe</span>
+          <span class="tag">DNN</span>
+          <span class="tag">YAMNet</span>
+          <span class="tag">Excel / JSON datasets</span>
+          <span class="tag">REST APIs</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MILESTONES ========== -->
+    <section class="section" id="milestones">
+      <div class="container">
+        <header class="section-header">
+          <h2>Milestones</h2>
+          <p class="section-lead">Key deliverables and assessments. Expand each item for date and grade placeholders.</p>
+        </header>
+
+        <div class="accordion" id="milestone-accordion">
+          <!-- EDIT: dates, marks, descriptions -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="acc-1" id="acc-btn-1">
+              <span class="accordion-title">Project Proposal</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-panel" id="acc-1" role="region" aria-labelledby="acc-btn-1" hidden>
+              <p><strong>Date:</strong> 15 Jan 2026 <em>(placeholder)</em></p>
+              <p><strong>Mark / Status:</strong> — / Submitted <em>(placeholder)</em></p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="acc-2" id="acc-btn-2">
+              <span class="accordion-title">Progress Presentation 1</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-panel" id="acc-2" role="region" aria-labelledby="acc-btn-2" hidden>
+              <p><strong>Date:</strong> 28 Feb 2026 <em>(placeholder)</em></p>
+              <p><strong>Mark / Status:</strong> — / Presented <em>(placeholder)</em></p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="acc-3" id="acc-btn-3">
+              <span class="accordion-title">Progress Presentation 2</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-panel" id="acc-3" role="region" aria-labelledby="acc-btn-3" hidden>
+              <p><strong>Date:</strong> 15 Apr 2026 <em>(placeholder)</em></p>
+              <p><strong>Mark / Status:</strong> — / Presented <em>(placeholder)</em></p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="acc-4" id="acc-btn-4">
+              <span class="accordion-title">Final Assessment</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-panel" id="acc-4" role="region" aria-labelledby="acc-btn-4" hidden>
+              <p><strong>Date:</strong> 20 May 2026 <em>(placeholder)</em></p>
+              <p><strong>Mark / Status:</strong> — / Scheduled <em>(placeholder)</em></p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="acc-5" id="acc-btn-5">
+              <span class="accordion-title">Viva</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-panel" id="acc-5" role="region" aria-labelledby="acc-btn-5" hidden>
+              <p><strong>Date:</strong> 05 Jun 2026 <em>(placeholder)</em></p>
+              <p><strong>Mark / Status:</strong> — / Scheduled <em>(placeholder)</em></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DOCUMENTS ========== -->
+    <section class="section section-alt" id="documents">
+      <div class="container">
+        <header class="section-header">
+          <h2>Documents</h2>
+          <p class="section-lead">Project artifacts. Replace <code>#</code> with real file or cloud links.</p>
+        </header>
+        <div class="grid-docs">
+          <!-- EDIT: href to PDF or Drive links -->
+          <a class="card card-link" href="#" target="_blank" rel="noopener noreferrer">
+            <h3>Project Charter</h3>
+            <p class="card-meta">PDF / Doc — placeholder</p>
+            <span class="card-cta">Open link →</span>
+          </a>
+          <a class="card card-link" href="#" target="_blank" rel="noopener noreferrer">
+            <h3>Proposal Document</h3>
+            <p class="card-meta">PDF — placeholder</p>
+            <span class="card-cta">Open link →</span>
+          </a>
+          <a class="card card-link" href="#" target="_blank" rel="noopener noreferrer">
+            <h3>Checklist Documents</h3>
+            <p class="card-meta">Folder — placeholder</p>
+            <span class="card-cta">Open link →</span>
+          </a>
+          <a class="card card-link" href="#" target="_blank" rel="noopener noreferrer">
+            <h3>Final Report</h3>
+            <p class="card-meta">PDF — placeholder</p>
+            <span class="card-cta">Open link →</span>
+          </a>
+          <a class="card card-link" href="#" target="_blank" rel="noopener noreferrer">
+            <h3>Research Paper</h3>
+            <p class="card-meta">PDF — placeholder</p>
+            <span class="card-cta">Open link →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PRESENTATIONS ========== -->
+    <section class="section" id="presentations">
+      <div class="container">
+        <header class="section-header">
+          <h2>Presentations</h2>
+          <p class="section-lead">Slides and recordings. Update links when hosted.</p>
+        </header>
+        <div class="grid-docs">
+          <!-- EDIT: href to slides -->
+          <a class="card card-link" href="#" target="_blank" rel="noopener noreferrer">
+            <h3>Proposal Presentation</h3>
+            <p class="card-meta">PPTX / PDF — placeholder</p>
+            <span class="card-cta">Open link →</span>
+          </a>
+          <a class="card card-link" href="#" target="_blank" rel="noopener noreferrer">
+            <h3>Progress Presentation 1</h3>
+            <p class="card-meta">PPTX / PDF — placeholder</p>
+            <span class="card-cta">Open link →</span>
+          </a>
+          <a class="card card-link" href="#" target="_blank" rel="noopener noreferrer">
+            <h3>Progress Presentation 2</h3>
+            <p class="card-meta">PPTX / PDF — placeholder</p>
+            <span class="card-cta">Open link →</span>
+          </a>
+          <a class="card card-link" href="#" target="_blank" rel="noopener noreferrer">
+            <h3>Final Presentation</h3>
+            <p class="card-meta">PPTX / PDF — placeholder</p>
+            <span class="card-cta">Open link →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT US ========== -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <header class="section-header">
+          <h2>About Us</h2>
+          <p class="section-lead">Research team and academic supervision.</p>
+        </header>
+
+        <h3 class="subsection-title">Team Members</h3>
+        <div class="grid-team">
+          <!-- EDIT: Member 1 — photo, name, ID, email, component -->
+          <article class="card card-profile">
+            <div class="profile-photo" role="img" aria-label="Photo placeholder">Photo</div>
+            <h3 class="profile-name">Your Name</h3>
+            <p class="profile-id">Student ID: ITXXXXXXXX</p>
+            <p class="profile-role">Component: Multilingual Sign Language Recognition and Translation</p>
+            <a class="profile-email" href="mailto:member1@students.sliit.lk">member1@students.sliit.lk</a>
+          </article>
+          <article class="card card-profile">
+            <div class="profile-photo" role="img" aria-label="Photo placeholder">Photo</div>
+            <h3 class="profile-name">Your Name</h3>
+            <p class="profile-id">Student ID: ITXXXXXXXX</p>
+            <p class="profile-role">Component: Gamified Sign Language Learning and Gesture Validation</p>
+            <a class="profile-email" href="mailto:member2@students.sliit.lk">member2@students.sliit.lk</a>
+          </article>
+          <article class="card card-profile">
+            <div class="profile-photo" role="img" aria-label="Photo placeholder">Photo</div>
+            <h3 class="profile-name">Your Name</h3>
+            <p class="profile-id">Student ID: ITXXXXXXXX</p>
+            <p class="profile-role">Component: Multimodal Emotion and Interaction Analysis</p>
+            <a class="profile-email" href="mailto:member3@students.sliit.lk">member3@students.sliit.lk</a>
+          </article>
+          <article class="card card-profile">
+            <div class="profile-photo" role="img" aria-label="Photo placeholder">Photo</div>
+            <h3 class="profile-name">Your Name</h3>
+            <p class="profile-id">Student ID: ITXXXXXXXX</p>
+            <p class="profile-role">Component: Context-Aware Hazard Sound Detection</p>
+            <a class="profile-email" href="mailto:member4@students.sliit.lk">member4@students.sliit.lk</a>
+          </article>
+        </div>
+
+        <h3 class="subsection-title">Supervision</h3>
+        <div class="grid-2 grid-supervisors">
+          <!-- EDIT: Supervisor details -->
+          <article class="card card-profile card-supervisor">
+            <div class="profile-photo profile-photo-sm" role="img" aria-label="Photo placeholder">Photo</div>
+            <h3 class="profile-name">Supervisor Name</h3>
+            <p class="profile-id">Title: Senior Lecturer <em>(placeholder)</em></p>
+            <a class="profile-email" href="mailto:supervisor@sliit.lk">supervisor@sliit.lk</a>
+          </article>
+          <!-- EDIT: Co-supervisor details -->
+          <article class="card card-profile card-supervisor">
+            <div class="profile-photo profile-photo-sm" role="img" aria-label="Photo placeholder">Photo</div>
+            <h3 class="profile-name">Co-Supervisor Name</h3>
+            <p class="profile-id">Title: Lecturer <em>(placeholder)</em></p>
+            <a class="profile-email" href="mailto:cosupervisor@sliit.lk">cosupervisor@sliit.lk</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT US ========== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="section-header">
+          <h2>Contact Us</h2>
+          <p class="section-lead">Institutional contact and a simple message form (front-end only).</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="card contact-info">
+            <h3>Contact Information</h3>
+            <!-- EDIT: Department, phone, address -->
+            <p><strong>Department:</strong> Faculty of Computing — SLIIT <em>(edit)</em></p>
+            <p><strong>Project email:</strong> <a href="mailto:ials.project@example.com">ials.project@example.com</a></p>
+            <p><strong>Phone:</strong> +94 XX XXX XXXX <em>(placeholder)</em></p>
+            <p><strong>Address:</strong> Malabe, Sri Lanka <em>(placeholder)</em></p>
+          </div>
+
+          <form class="card contact-form" id="contact-form" novalidate>
+            <h3>Send a Message</h3>
+            <p class="form-note">No data is sent to a server; submit shows a confirmation alert only.</p>
+            <div class="form-row">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" name="name" autocomplete="name" required placeholder="Your name">
+            </div>
+            <div class="form-row">
+              <label for="cf-email">Email</label>
+              <input type="email" id="cf-email" name="email" autocomplete="email" required placeholder="you@example.com">
+            </div>
+            <div class="form-row">
+              <label for="cf-subject">Subject</label>
+              <input type="text" id="cf-subject" name="subject" required placeholder="Regarding the project">
+            </div>
+            <div class="form-row">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="4" required placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Integrated Assistive Learning System — Research Project.</p>
+      <a class="footer-top" href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
