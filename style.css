@@ -1430,6 +1430,38 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
+.grid-docs-proposals {
+  list-style: none;
+  margin: 0 0 0.5rem;
+  padding: 0;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.grid-docs-proposals > li {
+  display: contents;
+}
+
+.docs-proposals-lead {
+  margin: -0.35rem 0 1.25rem;
+  font-size: 0.95rem;
+  color: var(--gray-600);
+  max-width: 40rem;
+}
+
+.card-doc-proposal h3 {
+  font-size: 1.08rem;
+}
+
+.card-doc-kicker {
+  display: block;
+  margin: 0 0 0.35rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--soft-blue);
+}
+
 .card-link {
   text-decoration: none;
   color: inherit;
@@ -1485,6 +1517,20 @@ body {
   color: var(--gray-600);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  overflow: hidden;
+}
+
+.profile-photo:has(img) {
+  padding: 0;
+  display: block;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 22%;
+  display: block;
 }
 
 .profile-photo-sm {
