@@ -101,7 +101,7 @@
                 </div>
               </div>
             </div>
-            <figcaption class="hero-figure-caption">Project hero image — 3D-style presentation</figcaption>
+            
           </figure>
         </div>
       </div>
@@ -222,66 +222,94 @@
     </section>
 
     <!-- ========== MILESTONES ========== -->
-    <section class="section" id="milestones">
+    <section class="section milestone-section" id="milestones">
       <div class="container">
         <header class="section-header">
           <h2>Milestones</h2>
-          <p class="section-lead">Key deliverables and assessments. Expand each item for date and grade placeholders.</p>
+          
         </header>
 
-        <div class="accordion" id="milestone-accordion">
-          <!-- EDIT: dates, marks, descriptions -->
-          <div class="accordion-item">
-            <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="acc-1" id="acc-btn-1">
-              <span class="accordion-title">Project Proposal</span>
-              <span class="accordion-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="accordion-panel" id="acc-1" role="region" aria-labelledby="acc-btn-1" hidden>
-              <p><strong>Date:</strong> 15 Jan 2026 <em>(placeholder)</em></p>
-              <p><strong>Mark / Status:</strong> — / Submitted <em>(placeholder)</em></p>
+        <ol class="milestone-timeline" aria-label="Project milestones">
+          <!-- EDIT: swap milestone-item--complete / milestone-item--pending; copy for text -->
+          <li class="milestone-item milestone-item--complete milestone-item--right">
+            <div class="milestone-spacer" aria-hidden="true"></div>
+            <div class="milestone-pivot">
+              <span class="milestone-index" aria-hidden="true">01</span>
+              <span class="milestone-node">
+                <span class="visually-hidden">Completed</span>
+                <svg class="milestone-check" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              </span>
             </div>
-          </div>
-          <div class="accordion-item">
-            <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="acc-2" id="acc-btn-2">
-              <span class="accordion-title">Progress Presentation 1</span>
-              <span class="accordion-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="accordion-panel" id="acc-2" role="region" aria-labelledby="acc-btn-2" hidden>
-              <p><strong>Date:</strong> 28 Feb 2026 <em>(placeholder)</em></p>
-              <p><strong>Mark / Status:</strong> — / Presented <em>(placeholder)</em></p>
+            <article class="milestone-card">
+              <p class="milestone-eyebrow">Deliverable</p>
+              <h3 class="milestone-title">Project Proposal</h3>
+              <p class="milestone-desc">Formal proposal submission and scope definition for IALS.</p>
+              <p class="milestone-status milestone-status--done">Completed</p>
+            </article>
+          </li>
+          <li class="milestone-item milestone-item--complete milestone-item--left">
+            <article class="milestone-card">
+              <p class="milestone-eyebrow">Presentation</p>
+              <h3 class="milestone-title">Progress Presentation 1</h3>
+              <p class="milestone-desc">First progress review with supervisors and panel feedback.</p>
+              <p class="milestone-status milestone-status--done">Completed</p>
+            </article>
+            <div class="milestone-pivot">
+              <span class="milestone-index" aria-hidden="true">02</span>
+              <span class="milestone-node">
+                <span class="visually-hidden">Completed</span>
+                <svg class="milestone-check" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              </span>
             </div>
-          </div>
-          <div class="accordion-item">
-            <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="acc-3" id="acc-btn-3">
-              <span class="accordion-title">Progress Presentation 2</span>
-              <span class="accordion-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="accordion-panel" id="acc-3" role="region" aria-labelledby="acc-btn-3" hidden>
-              <p><strong>Date:</strong> 15 Apr 2026 <em>(placeholder)</em></p>
-              <p><strong>Mark / Status:</strong> — / Presented <em>(placeholder)</em></p>
+            <div class="milestone-spacer" aria-hidden="true"></div>
+          </li>
+          <li class="milestone-item milestone-item--complete milestone-item--right">
+            <div class="milestone-spacer" aria-hidden="true"></div>
+            <div class="milestone-pivot">
+              <span class="milestone-index" aria-hidden="true">03</span>
+              <span class="milestone-node">
+                <span class="visually-hidden">Completed</span>
+                <svg class="milestone-check" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              </span>
             </div>
-          </div>
-          <div class="accordion-item">
-            <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="acc-4" id="acc-btn-4">
-              <span class="accordion-title">Final Assessment</span>
-              <span class="accordion-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="accordion-panel" id="acc-4" role="region" aria-labelledby="acc-btn-4" hidden>
-              <p><strong>Date:</strong> 20 May 2026 <em>(placeholder)</em></p>
-              <p><strong>Mark / Status:</strong> — / Scheduled <em>(placeholder)</em></p>
+            <article class="milestone-card">
+              <p class="milestone-eyebrow">Presentation</p>
+              <h3 class="milestone-title">Progress Presentation 2</h3>
+              <p class="milestone-desc">Second progress checkpoint and integration update.</p>
+              <p class="milestone-status milestone-status--done">Completed</p>
+            </article>
+          </li>
+          <li class="milestone-item milestone-item--pending milestone-item--left">
+            <article class="milestone-card">
+              <p class="milestone-eyebrow">Assessment</p>
+              <h3 class="milestone-title">Final Assessment</h3>
+              <p class="milestone-desc">Final evaluation of deliverables and system demonstration.</p>
+              <p class="milestone-status milestone-status--todo">Not completed</p>
+            </article>
+            <div class="milestone-pivot">
+              <span class="milestone-index milestone-index--muted" aria-hidden="true">04</span>
+              <span class="milestone-node milestone-node--pending">
+                <span class="visually-hidden">Not completed</span>
+              </span>
             </div>
-          </div>
-          <div class="accordion-item">
-            <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="acc-5" id="acc-btn-5">
-              <span class="accordion-title">Viva</span>
-              <span class="accordion-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="accordion-panel" id="acc-5" role="region" aria-labelledby="acc-btn-5" hidden>
-              <p><strong>Date:</strong> 05 Jun 2026 <em>(placeholder)</em></p>
-              <p><strong>Mark / Status:</strong> — / Scheduled <em>(placeholder)</em></p>
+            <div class="milestone-spacer" aria-hidden="true"></div>
+          </li>
+          <li class="milestone-item milestone-item--pending milestone-item--right">
+            <div class="milestone-spacer" aria-hidden="true"></div>
+            <div class="milestone-pivot">
+              <span class="milestone-index milestone-index--muted" aria-hidden="true">05</span>
+              <span class="milestone-node milestone-node--pending">
+                <span class="visually-hidden">Not completed</span>
+              </span>
             </div>
-          </div>
-        </div>
+            <article class="milestone-card">
+              <p class="milestone-eyebrow">Defense</p>
+              <h3 class="milestone-title">Viva</h3>
+              <p class="milestone-desc">Oral defense and Q&amp;A on the research and implementation.</p>
+              <p class="milestone-status milestone-status--todo">Not completed</p>
+            </article>
+          </li>
+        </ol>
       </div>
     </section>
 
@@ -290,7 +318,7 @@
       <div class="container">
         <header class="section-header">
           <h2>Documents</h2>
-          <p class="section-lead">Project artifacts and deliverables. Proposal PDFs use Google Drive direct download (files must be shared for “Anyone with the link”).</p>
+         
         </header>
 
         <h3 class="subsection-title">Individual proposal reports</h3>
@@ -397,7 +425,7 @@
       <div class="container">
         <header class="section-header">
           <h2>Presentations</h2>
-          <p class="section-lead">Slides and recordings. Update links when hosted.</p>
+         
         </header>
         <div class="grid-docs">
           <!-- Proposal deck: /export/pptx triggers download (Slides must be shared: Anyone with link can view). -->
@@ -493,16 +521,20 @@
         <div class="grid-2 grid-supervisors">
           <!-- EDIT: Supervisor details -->
           <article class="card card-profile card-supervisor">
-            <div class="profile-photo profile-photo-sm" role="img" aria-label="Photo placeholder">Photo</div>
+            <div class="profile-photo profile-photo-sm">
+              <img src="assets/role%20s.jpeg" alt="Portrait of Samanthi E.R Siriwardana" width="400" height="400" loading="lazy" decoding="async">
+            </div>
             <h3 class="profile-name">Samanthi E.R Siriwardana </h3>
-            <p class="profile-id">Title: Senior Lecturer <em>(placeholder)</em></p>
+            <p class="profile-id">Title: Senior Lecturer</p>
             <a class="profile-email" href="mailto:supervisor@sliit.lk">samanthi.s@sliit.lk</a>
           </article>
           <!-- EDIT: Co-supervisor details -->
           <article class="card card-profile card-supervisor">
-            <div class="profile-photo profile-photo-sm" role="img" aria-label="Photo placeholder">Photo</div>
+            <div class="profile-photo profile-photo-sm">
+              <img src="assets/role%20w.jpeg" alt="Portrait of I Weerathunga" width="400" height="400" loading="lazy" decoding="async">
+            </div>
             <h3 class="profile-name">I Weerathunga </h3>
-            <p class="profile-id">Title: Lecturer <em>(placeholder)</em></p>
+            <p class="profile-id">Title: Lecturer </p>
             <a class="profile-email" href="mailto:cosupervisor@sliit.lk">ishara.w@sliit.lk </a>
           </article>
         </div>
@@ -514,18 +546,11 @@
       <div class="container">
         <header class="section-header">
           <h2>Contact Us</h2>
-          <p class="section-lead">Institutional contact and a simple message form (front-end only).</p>
+         
         </header>
 
         <div class="contact-grid">
-          <div class="card contact-info">
-            <h3>Contact Information</h3>
-            <!-- EDIT: Department, phone, address -->
-            <p><strong>Department:</strong> Faculty of Computing — SLIIT <em>(edit)</em></p>
-            <p><strong>Project email:</strong> <a href="mailto:ials.project@example.com">ials.project@example.com</a></p>
-            <p><strong>Phone:</strong> +94 XX XXX XXXX <em>(placeholder)</em></p>
-            <p><strong>Address:</strong> Malabe, Sri Lanka <em>(placeholder)</em></p>
-          </div>
+         
 
           <form class="card contact-form" id="contact-form" novalidate>
             <h3>Send a Message</h3>

@@ -133,33 +133,6 @@
     });
   }
 
-  /* Milestone accordion */
-  var accRoot = document.getElementById("milestone-accordion");
-  if (accRoot) {
-    accRoot.querySelectorAll(".accordion-trigger").forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        var expanded = btn.getAttribute("aria-expanded") === "true";
-        var panelId = btn.getAttribute("aria-controls");
-        var panel = panelId ? document.getElementById(panelId) : null;
-
-        accRoot.querySelectorAll(".accordion-trigger").forEach(function (other) {
-          if (other === btn) return;
-          other.setAttribute("aria-expanded", "false");
-          var oid = other.getAttribute("aria-controls");
-          var op = oid ? document.getElementById(oid) : null;
-          if (op) {
-            op.hidden = true;
-          }
-        });
-
-        btn.setAttribute("aria-expanded", expanded ? "false" : "true");
-        if (panel) {
-          panel.hidden = expanded;
-        }
-      });
-    });
-  }
-
   /* Contact form — no backend; alert on submit */
   var form = document.getElementById("contact-form");
   if (form) {
