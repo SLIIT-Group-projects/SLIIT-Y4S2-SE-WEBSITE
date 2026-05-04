@@ -59,28 +59,6 @@
 
   bindHeroTilt();
 
-  /* Hero video: respect reduced motion (CSS swaps to PNG; pause to save work) */
-  function bindHeroVideo() {
-    var video = document.querySelector(".hero-phone-video");
-    if (!video) return;
-    function sync() {
-      if (reduceMotion.matches) {
-        video.pause();
-        video.removeAttribute("autoplay");
-      } else {
-        video.setAttribute("autoplay", "");
-        var p = video.play();
-        if (p && typeof p.then === "function") {
-          p.catch(function () {});
-        }
-      }
-    }
-    sync();
-    reduceMotion.addEventListener("change", sync);
-  }
-
-  bindHeroVideo();
-
   /* Smooth scroll offset for sticky header (native smooth scroll + manual offset) */
   function scrollToHash(hash, pushHistory) {
     if (!hash || hash === "#") return;

@@ -77,37 +77,21 @@
           </div>
         </div>
 
-        <!-- Right: full-bleed motion (no card chrome) + PNG fallback for reduced motion -->
-        <div class="hero-scene hero-scene--split hero-scene--video" id="hero-scene">
+        <!-- Right: full hero art (background kept as in asset) -->
+        <div class="hero-scene hero-scene--split hero-scene--hero-cutout" id="hero-scene">
           <div class="hero-decor hero-decor--split" aria-hidden="true">
             <div class="hero-glow-blob"></div>
             <div class="hero-shape-swoosh"></div>
           </div>
-          <figure class="hero-figure hero-figure--split hero-figure--video">
-            <div class="hero-visual-stage hero-visual-stage--phone hero-visual-stage--video-bare">
-              <span class="hero-video-glow" aria-hidden="true"></span>
-              <div class="hero-phone-halo hero-phone-halo--bare" aria-hidden="true"></div>
-              <div class="hero-phone-3d hero-phone-3d--video">
-                    <video
-                      class="hero-phone-video hero-phone-video--9-16"
-                      autoplay
-                      muted
-                      loop
-                      playsinline
-                      preload="auto"
-                      poster="assets/hero-app-phone.png"
-                      width="1280"
-                      height="1920"
-                      aria-label="Premium 3D smartphone showcase with glowing platform, representing the IALS app experience."
-                    >
-                      <source src="assets/hero-phone-motion3.mp4" type="video/mp4">
-                    </video>
+          <figure class="hero-figure hero-figure--split hero-figure--hero-cutout">
+            <div class="hero-visual-stage hero-visual-stage--phone hero-visual-stage--hero-cutout">
+              <div class="hero-phone-3d hero-phone-3d--cutout">
                 <img
-                  class="hero-phone-fallback-img"
-                  src="assets/hero-app-phone.png"
+                  class="hero-phone-cutout-img hero-phone-hero-img--fullscene"
+                  src="assets/hero-phone-fullscene.png"
                   width="1200"
-                  height="1000"
-                  alt="IALS mobile app interface shown on a smartphone."
+                  height="1200"
+                  alt="IALS app preview: smartphone on a glowing platform with floating learn, games, and safety icons."
                   decoding="async"
                   fetchpriority="high"
                 >
